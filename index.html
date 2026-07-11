@@ -135,11 +135,12 @@ button.ghost:hover{border-color:var(--blue-500);color:var(--blue-700);}
 .ttd-block{display:flex;justify-content:space-between;margin-top:34px;}
 .ttd-block .col{width:45%;text-align:center;}
 .ttd-space{height:64px;}
-
 @media print{
-  body *{visibility:hidden;}
-  .surat, .surat *{visibility:visible;}
-  .surat{position:absolute;top:0;left:0;width:100%;max-width:none;padding:14mm 16mm;}
+  .masthead{display:none !important;}
+  .grid-2{display:block !important;}
+  .grid-2 > div:first-child{display:none !important;}
+  .surat-wrap{border:none;}
+  .surat{width:100%;max-width:none;padding:14mm 16mm;margin:0;}
   @page{size:A4;margin:0;}
 }
 </style>
